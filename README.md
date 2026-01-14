@@ -16,8 +16,10 @@ Pastelizard blends soft pastel tones with magical accents to create an enchantin
 
 | Element | Color | Hex |
 |---------|-------|-----|
-| Background | Pale Lavender Cream | `#F8F6FF` |
-| Foreground | Soft Purple-Gray | `#4A4458` |
+| Background (Light) | Pale Lavender Cream | `#F8F6FF` |
+| Foreground (Light) | Soft Purple-Gray | `#4A4458` |
+| Background (Dark) | Deep Mystical Purple | `#1A1625` |
+| Foreground (Dark) | Ethereal Lavender-White | `#E8E4F0` |
 | Accent | Enchanted Lavender | `#9B8EC5` |
 | Cursor | Mystical Mauve | `#C9A8D4` |
 | Selection | Soft Lavender | `#D4B8E8` |
@@ -77,7 +79,43 @@ accent = "#YOUR_HEX_COLOR"
 ```
 
 ### Dark Mode
-Currently this theme is optimized for light mode. Dark mode support coming soon.
+Both light and dark mode variants are included in `colors.toml`. Switch between them using your compositor or window manager settings.
+
+## Theme Features
+
+### Neovim
+- Full LSP/diagnostics styling (errors, warnings, hints, info)
+- Telescope integration with blur and elevation
+- nvim-cmp completion with icon kind highlighting
+- Notify (nvim-notify) styling
+- Neogit integration
+- Spell checking underlines
+- Telescope, cmp, and diagnostic sign symbols
+
+### Waybar
+- Blur and transparency effects (backdrop-filter)
+- Elevation with subtle shadows
+- Color-coded modules (battery, network, temperature, etc.)
+- PulseAudio muted state styling
+- Urgency/alert states
+
+### GTK
+- Complete widget coverage (switches, sliders, progress bars)
+- Spinners and level bars
+- All interactive states (hover, active, disabled)
+- Scrollbars and treeviews
+- Menus, popovers, and tooltips
+- Combo boxes and spin buttons
+- File chooser styling
+
+### System24 (Discord/Vesktop)
+- Input field and text area styling
+- Mention highlighting
+- All interactive button variants
+- Status indicator colors
+- Message hover effects
+- Scrollbar styling
+- Modal and tooltip theming
 
 ## Author
 

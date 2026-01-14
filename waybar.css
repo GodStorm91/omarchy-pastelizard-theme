@@ -2,53 +2,73 @@
 /* Enchanted status bar */
 
 @define-color bg #F8F6FF;
+@define-color bg-dim #F0EDFA;
 @define-color fg #4A4458;
 @define-color accent #9B8EC5;
 @define-color hover #D4B8E8;
 @define-color active #C9A8D4;
+@define-color warning #FFEAA7;
+@define-color error #F5A3B3;
+@define-color success #A8E6CF;
+@define-color info #A8D8EA;
 
 * {
-  background-color: @bg;
+  background-color: transparent;
   color: @fg;
   border: none;
-  font-family: "Sans";
+  font-family: "Sans", "Inter", "Roboto", sans-serif;
   font-size: 13px;
+  font-weight: 450;
 }
 
 window#waybar {
-  background-color: @bg;
-  border-bottom: 2px solid @accent;
+  background-color: rgba(248, 246, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(155, 142, 197, 0.3);
+  box-shadow: 0 4px 24px rgba(155, 142, 197, 0.15);
   border-radius: 0;
-  padding: 4px 8px;
+  padding: 6px 12px;
 }
 
 tooltip {
-  background-color: @bg;
-  border: 1px solid @accent;
-  border-radius: 6px;
+  background-color: rgba(248, 246, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(155, 142, 197, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(155, 142, 197, 0.2);
 }
 
 #workspaces {
-  spacing: 6px;
+  spacing: 8px;
 }
 
 #workspaces button {
   background-color: transparent;
   border: 1px solid transparent;
-  border-radius: 6px;
-  min-width: 28px;
-  padding: 4px 8px;
+  border-radius: 8px;
+  min-width: 32px;
+  padding: 6px 10px;
+  transition: all 0.2s ease;
 }
 
 #workspaces button.active {
   background-color: @accent;
   color: white;
   border: 1px solid @accent;
+  box-shadow: 0 2px 8px rgba(155, 142, 197, 0.4);
 }
 
 #workspaces button:hover {
-  background-color: @hover;
-  border: 1px solid @accent;
+  background-color: rgba(155, 142, 197, 0.15);
+  border: 1px solid rgba(155, 142, 197, 0.4);
+}
+
+#workspaces button.urgent {
+  background-color: @error;
+  color: white;
+  border: 1px solid @error;
 }
 
 #clock,
@@ -61,47 +81,176 @@ tooltip {
 #pulseaudio,
 #battery,
 #tray {
-  padding: 4px 10px;
-  border-radius: 6px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  background-color: rgba(248, 246, 255, 0.6);
+  margin-left: 4px;
+  margin-right: 4px;
+  transition: all 0.2s ease;
 }
 
 #clock {
   font-weight: 500;
   color: @accent;
+  background-color: rgba(155, 142, 197, 0.1);
 }
 
 #window {
   font-weight: 400;
-}
-
-#battery {
-  color: #A8E6CF;
-}
-
-#battery.charging {
-  color: #9B8EC5;
-}
-
-#battery.critical {
-  color: #F5A3B3;
-}
-
-#pulseaudio {
-  color: #D4B8E8;
-}
-
-#network {
-  color: #A8D8EA;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 #cpu {
-  color: #FFEAA7;
+  color: @warning;
+  background-color: rgba(255, 234, 167, 0.15);
+}
+
+#memory {
+  color: @info;
+  background-color: rgba(168, 216, 234, 0.15);
+}
+
+#disk {
+  color: @accent;
+  background-color: rgba(155, 142, 197, 0.1);
 }
 
 #temperature {
-  color: #88D8C0;
+  color: @success;
+  background-color: rgba(168, 230, 207, 0.15);
 }
 
 #temperature.critical {
-  color: #F5A3B3;
+  color: @error;
+  background-color: rgba(245, 163, 179, 0.15);
+}
+
+#network {
+  color: @info;
+  background-color: rgba(168, 216, 234, 0.15);
+}
+
+#network.disconnected {
+  color: @error;
+  background-color: rgba(245, 163, 179, 0.15);
+}
+
+#pulseaudio {
+  color: @hover;
+  background-color: rgba(212, 184, 232, 0.15);
+}
+
+#pulseaudio.muted {
+  color: @error;
+  background-color: rgba(245, 163, 179, 0.15);
+}
+
+#battery {
+  color: @success;
+  background-color: rgba(168, 230, 207, 0.15);
+}
+
+#battery.charging {
+  color: @accent;
+  background-color: rgba(155, 142, 197, 0.15);
+}
+
+#battery.plugged {
+  color: @accent;
+  background-color: rgba(155, 142, 197, 0.15);
+}
+
+#battery.warning {
+  color: @warning;
+  background-color: rgba(255, 234, 167, 0.15);
+}
+
+#battery.critical {
+  color: @error;
+  background-color: rgba(245, 163, 179, 0.15);
+  animation: battery-pulse 1s infinite;
+}
+
+@keyframes battery-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+#tray {
+  background-color: rgba(155, 142, 197, 0.1);
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .active {
+  -gtk-icon-effect: highlight;
+}
+
+#custom-launcher {
+  background-color: @accent;
+  color: white;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+#custom-separator {
+  color: rgba(155, 142, 197, 0.5);
+  font-size: 16px;
+  padding: 0 4px;
+}
+
+#custom-weather {
+  color: @accent;
+  background-color: rgba(155, 142, 197, 0.1);
+  padding: 6px 14px;
+  border-radius: 8px;
+  margin-left: 4px;
+}
+
+#idle_inhibitor {
+  color: @accent;
+  background-color: rgba(155, 142, 197, 0.1);
+  padding: 6px 14px;
+  border-radius: 8px;
+  margin-left: 4px;
+}
+
+#idle_inhibitor.active {
+  background-color: @accent;
+  color: white;
+}
+
+#keyboard-state {
+  color: @accent;
+  background-color: rgba(155, 142, 197, 0.1);
+  padding: 6px 14px;
+  border-radius: 8px;
+  margin-left: 4px;
+}
+
+#mpris {
+  color: @accent;
+  background-color: rgba(155, 142, 197, 0.1);
+  padding: 6px 14px;
+  border-radius: 8px;
+  margin-left: 4px;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#mpris.paused {
+  color: @gray;
+}
+
+#mpris.playing {
+  color: @success;
 }
