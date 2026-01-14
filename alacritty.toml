@@ -24,8 +24,7 @@ white = "#6B5B7A"
 [colors.primary]
 background = "#F8F6FF"
 foreground = "#4A4458"
-bright_foreground = "#4A4458"
-dim_foreground = "#4A4458aa"
+dim_foreground = "#4A4458"
 
 [selection]
 background = "#D4B8E8"
