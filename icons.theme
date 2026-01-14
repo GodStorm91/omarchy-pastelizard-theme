@@ -1,0 +1,19 @@
+## Pastelizard Icon Theme Configuration
+## Enchanted icon pack
+
+[Icon Theme]
+Name=Pastelizard
+Inherits=Papirus-Light
+Directories= scalable
+
+[scalable]
+Size=48
+MinSize=16
+MaxSize=256
+Type=Scalable
+
+# Custom icon colors for pastel theme
+[Colors]
+accent=#9B8EC5
+text=#4A4458
+background=#F8F6FF

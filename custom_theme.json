@@ -1,0 +1,21 @@
+{
+  "name": "Pastelizard",
+  "identifier": "pastelizard",
+  "version": "1.0.0",
+  "type": "light",
+  "author": "Pastelizard",
+  "description": "A whimsical pastel-themed workspace with magical enchantments",
+  "colors": {
+    "accent": "#9B8EC5",
+    "background": "#F8F6FF",
+    "foreground": "#4A4458",
+    "cursor": "#C9A8D4",
+    "selection": "#D4B8E8"
+  },
+  "wallpaper": "backgrounds/pastelizard.png",
+  "features": [
+    "rounded_corners",
+    "transparency",
+    "animations"
+  ]
+}

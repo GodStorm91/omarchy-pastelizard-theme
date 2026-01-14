@@ -1,0 +1,93 @@
+/* Pastelizard Theme for GTK */
+/* Enchanted pastel workspace */
+
+@define-color bg #F8F6FF;
+@define-color fg #4A4458;
+@define-color accent #9B8EC5;
+@define-color cursor #C9A8D4;
+@define-color selection #D4B8E8;
+
+/* Base colors */
+* {
+  background-color: @bg;
+  color: @fg;
+  border-color: @accent;
+}
+
+/* Buttons */
+button {
+  background-color: @bg;
+  border: 1px solid @accent;
+  border-radius: 8px;
+  color: @fg;
+}
+
+button:hover {
+  background-color: alpha(@accent, 0.1);
+  border-color: @accent;
+}
+
+button:active {
+  background-color: alpha(@accent, 0.2);
+}
+
+/* Entries */
+entry {
+  background-color: white;
+  border: 1px solid @accent;
+  border-radius: 6px;
+  color: @fg;
+}
+
+entry:focus {
+  border-color: @accent;
+  box-shadow: 0 0 0 2px alpha(@accent, 0.3);
+}
+
+/* Treeviews */
+treeview {
+  background-color: @bg;
+  color: @fg;
+}
+
+treeview:selected {
+  background-color: @selection;
+  color: @fg;
+}
+
+/* Scrollbars */
+scrollbar {
+  background-color: @bg;
+  border-color: @accent;
+}
+
+scrollbar:hover {
+  background-color: alpha(@accent, 0.1);
+}
+
+/* Selection */
+*:selected {
+  background-color: @selection;
+  color: @fg;
+}
+
+/* Tooltips */
+tooltip {
+  background-color: @accent;
+  color: white;
+  border-radius: 6px;
+}
+
+/* Header bars */
+headerbar {
+  background-color: @bg;
+  border-bottom: 1px solid @accent;
+  color: @fg;
+}
+
+/* Popovers */
+popover {
+  background-color: @bg;
+  border: 1px solid @accent;
+  border-radius: 8px;
+}

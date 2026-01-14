@@ -1,0 +1,36 @@
+## Pastelizard Theme for Omarchy
+## A pastel-themed workspace with magical enchantments
+
+# Base Colors
+accent = "#9B8EC5"           # Soft lavender accent
+cursor = "#C9A8D4"            # Pastel purple cursor
+foreground = "#4A4458"        # Soft dark purple-gray text
+background = "#F8F6FF"        # Very pale lavender-white background
+selection_foreground = "#4A4458"
+selection_background = "#D4B8E8"
+
+# Terminal & Application Colors (16-color palette)
+color0 = "#F8F6FF"            # Background
+color1 = "#F5A3B3"            # Pastel pink
+color2 = "#A8E6CF"            # Pastel mint
+color3 = "#FFEAA7"            # Pastel yellow
+color4 = "#A8D8EA"            # Pastel sky blue
+color5 = "#D4B8E8"            # Pastel lavender
+color6 = "#88D8C0"            # Pastel teal
+color7 = "#6B5B7A"            # Dark lavender-gray
+
+# Bright Colors
+color8 = "#C9BBD9"            # Light purple
+color9 = "#F5A3B3"            # Pastel pink (bright)
+color10 = "#A8E6CF"           # Pastel mint (bright)
+color11 = "#FFEAA7"           # Pastel yellow (bright)
+color12 = "#A8D8EA"           # Pastel sky blue (bright)
+color13 = "#D4B8E8"           # Pastel lavender (bright)
+color14 = "#88D8C0"           # Pastel teal (bright)
+color15 = "#6B5B7A"           # Dark lavender-gray (bright)
+
+# Magical Accent Colors
+magic_primary = "#9B8EC5"     # Enchanted lavender
+magic_secondary = "#C9A8D4"   # Mystical mauve
+magic_glow = "#E8D5FF"        # Ethereal glow
+magic_dark = "#5D4E6D"        # Deep mystical purple

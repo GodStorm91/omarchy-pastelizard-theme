@@ -1,0 +1,62 @@
+/* Pastelizard Theme for Walker */
+/* Enchanted app launcher */
+
+@define-color bg #F8F6FF;
+@define-color fg #4A4458;
+@define-color accent #9B8EC5;
+@define-color hover #D4B8E8;
+
+window {
+  background-color: @bg;
+  border: 2px solid @accent;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(155, 142, 197, 0.3);
+}
+
+entry {
+  background-color: white;
+  border: 1px solid @accent;
+  border-radius: 6px;
+  color: @fg;
+  font-size: 16px;
+  padding: 8px 12px;
+}
+
+entry:focus {
+  border-color: @accent;
+  box-shadow: 0 0 0 2px rgba(155, 142, 197, 0.3);
+}
+
+flowbox {
+  background-color: transparent;
+}
+
+flowboxchild {
+  background-color: @bg;
+  border: 1px solid @accent;
+  border-radius: 8px;
+}
+
+flowboxchild:hover {
+  background-color: @hover;
+  border-color: @accent;
+}
+
+flowboxchild:active {
+  background-color: @accent;
+}
+
+flowboxchild:selected {
+  background-color: @accent;
+}
+
+label.title {
+  color: @accent;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+label.subtitle {
+  color: @fg;
+  font-size: 12px;
+}

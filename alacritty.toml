@@ -1,0 +1,44 @@
+## Pastelizard Theme for Alacritty
+## Enchanted terminal
+
+[colors.bright]
+black = "#C9BBD9"
+red = "#F5A3B3"
+green = "#A8E6CF"
+yellow = "#FFEAA7"
+blue = "#A8D8EA"
+magenta = "#D4B8E8"
+cyan = "#88D8C0"
+white = "#6B5B7A"
+
+[colors.normal]
+black = "#F8F6FF"
+red = "#F5A3B3"
+green = "#A8E6CF"
+yellow = "#FFEAA7"
+blue = "#A8D8EA"
+magenta = "#D4B8E8"
+cyan = "#88D8C0"
+white = "#6B5B7A"
+
+[colors.primary]
+background = "#F8F6FF"
+foreground = "#4A4458"
+bright_foreground = "#4A4458"
+dim_foreground = "#4A4458aa"
+
+[selection]
+background = "#D4B8E8"
+foreground = "#4A4458"
+
+[cursor]
+cursor_color = "#C9A8D4"
+text_cursor_color = "#F8F6FF"
+
+[window]
+opacity = 0.95
+padding.x = 8
+padding.y = 8
+
+[font]
+size = 12

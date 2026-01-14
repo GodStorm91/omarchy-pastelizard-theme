@@ -1,0 +1,31 @@
+## Pastelizard Theme for btop
+## Enchanted system monitor
+
+# Colors
+theme[0]="#F8F6FF"      # bg
+theme[1]="#9B8EC5"      # accent
+theme[2]="#D4B8E8"      # highlight
+theme[3]="#4A4458"      # main text
+theme[4]="#6B5B7A"      # dim text
+theme[5]="#F5A3B3"      # red/pink
+theme[6]="#A8E6CF"      # green/mint
+theme[7]="#FFEAA7"      # yellow
+theme[8]="#A8D8EA"      # blue
+theme[9]="#D4B8E8"      # lavender
+theme[10]="#C9A8D4"     # mauve
+theme[11]="#88D8C0"     # teal
+theme[12]="#C9BBD9"     # light purple
+theme[13]="#F5A3B3"     # pink alt
+theme[14]="#A8E6CF"     # mint alt
+theme[15]="#6B5B7A"     # dark
+
+# Gradient (16 entries, can be unset)
+# Uses gradient from "title" to "current" used in charts and graphs
+gradient[0]="#9B8EC5"
+gradient[1]="#A8D8EA"
+gradient[2]="#A8E6CF"
+gradient[3]="#FFEAA7"
+gradient[4]="#F5A3B3"
+gradient[5]="#D4B8E8"
+gradient[6]="#C9A8D4"
+gradient[7]="#88D8C0"

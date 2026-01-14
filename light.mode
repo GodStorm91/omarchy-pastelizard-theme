@@ -1,0 +1,8 @@
+{
+  "mode": "light",
+  "colors": {
+    "background": "#F8F6FF",
+    "foreground": "#4A4458",
+    "accent": "#9B8EC5"
+  }
+}

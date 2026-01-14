@@ -1,0 +1,107 @@
+/* Pastelizard Theme for Waybar */
+/* Enchanted status bar */
+
+@define-color bg #F8F6FF;
+@define-color fg #4A4458;
+@define-color accent #9B8EC5;
+@define-color hover #D4B8E8;
+@define-color active #C9A8D4;
+
+* {
+  background-color: @bg;
+  color: @fg;
+  border: none;
+  font-family: "Sans";
+  font-size: 13px;
+}
+
+window#waybar {
+  background-color: @bg;
+  border-bottom: 2px solid @accent;
+  border-radius: 0;
+  padding: 4px 8px;
+}
+
+tooltip {
+  background-color: @bg;
+  border: 1px solid @accent;
+  border-radius: 6px;
+}
+
+#workspaces {
+  spacing: 6px;
+}
+
+#workspaces button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  min-width: 28px;
+  padding: 4px 8px;
+}
+
+#workspaces button.active {
+  background-color: @accent;
+  color: white;
+  border: 1px solid @accent;
+}
+
+#workspaces button:hover {
+  background-color: @hover;
+  border: 1px solid @accent;
+}
+
+#clock,
+#window,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#network,
+#pulseaudio,
+#battery,
+#tray {
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+#clock {
+  font-weight: 500;
+  color: @accent;
+}
+
+#window {
+  font-weight: 400;
+}
+
+#battery {
+  color: #A8E6CF;
+}
+
+#battery.charging {
+  color: #9B8EC5;
+}
+
+#battery.critical {
+  color: #F5A3B3;
+}
+
+#pulseaudio {
+  color: #D4B8E8;
+}
+
+#network {
+  color: #A8D8EA;
+}
+
+#cpu {
+  color: #FFEAA7;
+}
+
+#temperature {
+  color: #88D8C0;
+}
+
+#temperature.critical {
+  color: #F5A3B3;
+}

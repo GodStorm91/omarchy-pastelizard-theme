@@ -1,0 +1,36 @@
+{
+  "name": "Pastelizard",
+  "colors": {
+    "frame": "#F8F6FF",
+    "frame_inactive": "#F8F6FF",
+    "frame_overlay": "#F8F6FF",
+    "frame_incognito": "#F8F6FF",
+    "toolbar": "#F8F6FF",
+    "tab_background": "#F8F6FF",
+    "tab_background_incognito": "#F8F6FF",
+    "tab_text": "#4A4458",
+    "tab_background_text": "#4A4458",
+    "bookmark_text": "#4A4458",
+    "ntp_background": "#F8F6FF",
+    "ntp_text": "#4A4458",
+    "ntp_link": "#9B8EC5",
+    "ntp_link_underline": "#9B8EC5",
+    "button_background": "#F8F6FF",
+    "button_background_hover": "#D4B8E8",
+    "button_background_active": "#C9A8D4",
+    "omnibox_background": "#FFFFFF",
+    "omnibox_text": "#4A4458",
+    "omnibox_foreground": "#4A4458"
+  },
+  "properties": {
+    "frame_opacity": 1.0,
+    "tab_rendering": 0,
+    " accelerators": {
+      "background": "#F8F6FF",
+      "foreground": "#4A4458"
+    }
+  },
+  "icons": {
+    "theme_icons": []
+  }
+}

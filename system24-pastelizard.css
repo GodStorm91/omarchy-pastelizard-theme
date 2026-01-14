@@ -1,0 +1,105 @@
+/* Pastelizard Theme for System24 (Discord/Vesktop) */
+/* Enchanted pastel chat experience */
+
+:root {
+  /* Backgrounds */
+  --bg-primary: #F8F6FF;
+  --bg-secondary: #F0EDFA;
+  --bg-tertiary: #E5E0F5;
+  --bg-modifier-hover: rgba(155, 142, 197, 0.1);
+  --bg-modifier-selected: rgba(155, 142, 197, 0.2);
+  --bg-modifier-accent: rgba(155, 142, 197, 0.3);
+
+  /* Text */
+  --text-normal: #4A4458;
+  --text-muted: #6B5B7A;
+  --text-link: #9B8EC5;
+  --text-header: #4A4458;
+
+  /* Accents */
+  --accent-primary: #9B8EC5;
+  --accent-secondary: #C9A8D4;
+  --accent-tertiary: #D4B8E8;
+
+  /* Interactive */
+  --interactive-normal: #4A4458;
+  --interactive-hover: #9B8EC5;
+  --interactive-active: #4A4458;
+  --interactive-selected: #9B8EC5;
+
+  /* Scrollbar */
+  --scrollbar-auto-thumb: #D4B8E8;
+  --scrollbar-auto-track: #F8F6FF;
+  --scrollbar-thin-thumb: #D4B8E8;
+
+  /* Brand */
+  --brand-experiment: #9B8EC5;
+  --brand-experiment-500: #9B8EC5;
+  --brand-experiment-560: #C9A8D4;
+  --brand-experiment-600: #9B8EC5;
+
+  /* Discord-specific */
+  --channels-default: #6B5B7A;
+  --channel-textarea-background: #F0EDFA;
+  --discord-green: #A8E6CF;
+  --discord-yellow: #FFEAA7;
+  --discord-red: #F5A3B3;
+  --discord-blue: #A8D8EA;
+}
+
+/* Chat background */
+.chat-2ZfD3I {
+  background-color: var(--bg-primary);
+}
+
+/* Message input */
+.channelTextArea-rK18i2 {
+  background-color: var(--bg-secondary);
+}
+
+/* Channel list */
+.scroller-2LSWBU {
+  background-color: var(--bg-secondary);
+}
+
+/* Server list */
+.guilds-1SWlCJ {
+  background-color: var(--bg-tertiary);
+}
+
+/* Member list */
+.members-3WRCEx {
+  background-color: var(--bg-primary);
+}
+
+/* Headers */
+.header-2V-4Sw {
+  background-color: var(--bg-primary);
+}
+
+/* Buttons */
+button {
+  background-color: var(--accent-primary);
+  color: white;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: var(--accent-secondary);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--accent-tertiary);
+  color: var(--text-normal);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-auto-thumb);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-auto-track);
+}

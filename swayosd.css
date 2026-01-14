@@ -1,0 +1,49 @@
+/* Pastelizard Theme for SwayOSD */
+/* Enchanted on-screen display */
+
+@define-color bg #F8F6FF;
+@define-color fg #4A4458;
+@define-color accent #9B8EC5;
+@define-color hover #D4B8E8;
+
+* {
+  background-color: @bg;
+  color: @fg;
+  font-family: "Sans";
+}
+
+window {
+  background-color: @bg;
+  border: 2px solid @accent;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(155, 142, 197, 0.4);
+}
+
+label {
+  color: @fg;
+  font-size: 14px;
+}
+
+label.value {
+  color: @accent;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+progress {
+  background-color: @bg;
+  border: 1px solid @accent;
+  border-radius: 4px;
+  min-width: 200px;
+  min-height: 8px;
+}
+
+progress trough {
+  background-color: white;
+  border-radius: 4px;
+}
+
+progress progress {
+  background-color: @accent;
+  border-radius: 4px;
+}

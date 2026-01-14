@@ -1,0 +1,80 @@
+{
+  "name": "Pastelizard",
+  "type": "light",
+  "colors": {
+    "editor.background": "#F8F6FF",
+    "editor.foreground": "#4A4458",
+    "editor.lineHighlightBackground": "#D4B8E822",
+    "editor.selectionBackground": "#D4B8E8",
+    "editorCursor.foreground": "#C9A8D4",
+    "editorLineNumber.foreground": "#C9BBD9",
+    "editorLineNumber.activeForeground": "#9B8EC5",
+    "activityBar.background": "#F8F6FF",
+    "activityBar.foreground": "#9B8EC5",
+    "sideBar.background": "#F8F6FF",
+    "sideBar.foreground": "#4A4458",
+    "sideBar.border": "#9B8EC544",
+    "statusBar.background": "#9B8EC5",
+    "statusBar.foreground": "#F8F6FF",
+    "titleBar.background": "#F8F6FF",
+    "titleBar.foreground": "#4A4458",
+    "titleBar.border": "#9B8EC544",
+    "menu.background": "#F8F6FF",
+    "menu.foreground": "#4A4458",
+    "button.background": "#9B8EC5",
+    "button.foreground": "#F8F6FF",
+    "input.background": "#FFFFFF",
+    "input.foreground": "#4A4458",
+    "input.border": "#9B8EC5",
+    "focusBorder": "#9B8EC5",
+    "badge.background": "#D4B8E8",
+    "badge.foreground": "#4A4458",
+    "scrollbarSlider.background": "#D4B8E888",
+    "scrollbarSlider.hoverBackground": "#D4B8D8",
+    "scrollbarSlider.activeBackground": "#9B8EC5"
+  },
+  "tokenColors": [
+    {
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": {
+        "foreground": "#6B5B7A"
+      }
+    },
+    {
+      "scope": ["keyword", "storage.type"],
+      "settings": {
+        "foreground": "#F5A3B3"
+      }
+    },
+    {
+      "scope": ["string", "punctuation.definition.string"],
+      "settings": {
+        "foreground": "#A8E6CF"
+      }
+    },
+    {
+      "scope": ["constant.numeric", "constant.language"],
+      "settings": {
+        "foreground": "#9B8EC5"
+      }
+    },
+    {
+      "scope": ["variable", "entity.name.function"],
+      "settings": {
+        "foreground": "#A8D8EA"
+      }
+    },
+    {
+      "scope": ["type", "entity.name.class"],
+      "settings": {
+        "foreground": "#88D8C0"
+      }
+    },
+    {
+      "scope": ["keyword.operator"],
+      "settings": {
+        "foreground": "#4A4458"
+      }
+    }
+  ]
+}
